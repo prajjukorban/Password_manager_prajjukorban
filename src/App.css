@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pass {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+#btn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #0056b3;
+}
+
+.data-table-container {
+  overflow-x: auto; /* Allows horizontal scrolling */
+  margin-top: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
+
+.data-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.no-data {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#img {
+  height: 20px;
+  right: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#password {
+  width: 100%;
+}
+
+nav {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Anton', Courier, monospace;
+  font-size: xx-large;
+  color: #007bff;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .data-table th,
+  .data-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .data-table tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .data-table-container {
+    padding: 0 10px;
+  }
+}
